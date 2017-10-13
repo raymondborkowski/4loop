@@ -1,0 +1,23 @@
+{
+  "name": "4loop",
+  "version": "0.0.1",
+  "description": "shorten for loop syntax. Handles arrays, objects etc based on what you pass it",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://www.github.com/raymondborkowski/4loop.git"
+  },
+  "keywords": [
+    "forloop",
+    "forin",
+    "foreach"
+  ],
+  "bugs": {
+    "url": "https://www.github.com/raymondborkowski/4loop/issues"
+  },
+  "author": "Raymond Borkowski <rborkows@umich.edu>",
+  "license": "ISC"
+}
