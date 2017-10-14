@@ -1,3 +1,5 @@
-exports.printMsg = () => {
-    console.log('Hello 4Loop!');
+const forLoop = function forLoop(){
+
 };
+
+module.exports = forLoop();
