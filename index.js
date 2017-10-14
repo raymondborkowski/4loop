@@ -7,7 +7,7 @@ const isArray = function isArray(whoAmI){
 };
 
 const isNumber = function isNumber(whoAmI){
-    return !isNaN(whoAmI);
+    return !Number.isNaN(whoAmI);
 };
 
 const fourLoop = function fourLoop(loopMe, callback){
@@ -16,16 +16,12 @@ const fourLoop = function fourLoop(loopMe, callback){
             callback(loopMe[k], k);
         });
     } else if (isArray(loopMe)) {
-        for (const value of loopMe) {
-            callback(value);
-        }
+        loopMe.forEach((val, iterator) => {
+            callback(val, iterator);
+        });
     } else if (isNumber(loopMe)) {
-        for (let i = 0; i < loopMe; i++) {
+        for (let i = 0; i < loopMe; i += 1) {
             callback(i);
-        }
-    } else if (isMap(loopMe)) {
-        for (const [k, v] of loopMe) {
-            callback(v, k);
         }
     }
 };
