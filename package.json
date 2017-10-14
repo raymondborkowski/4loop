@@ -1,6 +1,6 @@
 {
   "name": "4loop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "shorten for loop syntax. Handles arrays, objects etc based on what you pass it",
   "main": "index.js",
   "scripts": {
