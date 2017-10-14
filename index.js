@@ -1,5 +1,5 @@
-const forLoop = function forLoop(){
-
+const forLoop = function forLoop(callback){
+    callback();
 };
 
-module.exports = forLoop();
+module.exports = forLoop;
