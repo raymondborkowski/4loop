@@ -16,15 +16,15 @@ const obj = { foo: 'bar', baz: 'cat' };
 const arr = ['foo', 'bar', 'baz', 'cat'];
 const arrLength = arr.length;
 
-fourLoop(obj, (iterator, key) => {
+fourLoop(obj, (value, key) => {
     // Do magic here
 });
 
-fourLoop(arr, (iterator, key) => {
+fourLoop(arr, (value, iterator) => {
     // Do magic here
 });
 
-fourLoop(arrLength, (iterator) => {
+fourLoop(arrLength, (value, iterator) => {
     // Do magic here
 });
 

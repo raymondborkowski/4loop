@@ -5,7 +5,8 @@ module.exports = {
         "space-before-blocks": "off"
     },
     "globals": {
-        "describe": true
+        "describe": true,
+        "it": true
     },
     "env": {
         "node": true
