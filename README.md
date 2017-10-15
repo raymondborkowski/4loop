@@ -50,7 +50,7 @@ fourLoop(mySet, (value, key, iterator) => {
 fourLoop(myMap, (value, key, iterator) => {
     // Do magic here
     if (iterator === 1) {
-        console.log(value, key, iterator); // Prints baz, cats, 1
+        console.log(value, key, iterator); // Prints cats, baz, 1
     }
 });
 
