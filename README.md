@@ -17,7 +17,7 @@ const obj = { foo: 'bar', baz: 'cat' };
 const arr = ['foo', 'bar', 'baz', 'cat'];
 const arrLength = arr.length;
 const mySet = new Set(['foo', 'bar', { baz: 'cats' }]);
-const myMap = new Map([['foo', 'bar'], ['baz', 'cats'], ['dogs', undefined]])
+const myMap = new Map([['foo', 'bar'], ['baz', 'cats'], ['dogs', undefined]]);
 
 fourLoop(obj, (value, key, iterator) => {
     // Do magic here
