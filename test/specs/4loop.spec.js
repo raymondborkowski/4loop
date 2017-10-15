@@ -104,7 +104,7 @@ describe('4loop', function (){
                 iterator: 0
             };
             var cats = {};
-            fourLoop(obj, function (v,k,i){ cats = mockObj(v, k, i); });
+            fourLoop(obj, function (v, k, i){ cats = mockObj(v, k, i); });
             expect(cats).toBe(expectedValue);
         });
 

@@ -8,7 +8,10 @@
   },
   "globals": {
     "describe": true,
-    "it": true
+    "it": true,
+    "Set": true,
+    "Map": true,
+    "spy": true
   },
   "env": {
     "node": true

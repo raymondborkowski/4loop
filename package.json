@@ -1,11 +1,11 @@
 {
   "name": "4loop",
   "version": "1.1.4",
-  "description": "shorten for loop syntax. Handles arrays, objects etc based on what you pass it",
+  "description": "Standard ForLoop syntax. Keep syntax clean and standard no matter what you pass us (arrs, objs, maps,etc.",
   "main": "index.js",
   "scripts": {
-    "test": "node ./test/run",
-    "deploy": "node ./test/run && npm publish"
+    "test": "eslint . && node ./test/run",
+    "deploy": "eslint . && node ./test/run && npm publish"
   },
   "repository": {
     "type": "git",
