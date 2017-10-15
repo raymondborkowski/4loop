@@ -1,52 +1,55 @@
-const FourLoop = require('../../index');
+const fourLoop = require('../../index');
 
-describe('4loop', () => {
-    describe('ensures callbacks were executed', () => {
-        it('called the callback executed on obj', (expect) => {
-            let wasCallbackHit = false;
-            const callback = function callback(){
+describe('4loop', function (){
+    describe('ensures callbacks were executed', function () {
+        it('called the callback executed on obj', function (expect) {
+            var wasCallbackHit = false;
+            const callback = function callback() {
                 wasCallbackHit = true;
             };
-            FourLoop({ cats: 'rule' }, callback);
+            fourLoop({ cats: 'rule' }, callback);
             expect(wasCallbackHit).toBe(true);
         });
-        it('called the callback executed on array', (expect) => {
-            let wasCallbackHit = false;
-            const callback = function callback(){
+        it('called the callback executed on array', function (expect) {
+            var wasCallbackHit = false;
+            const callback = function callback() {
                 wasCallbackHit = true;
             };
-            FourLoop(['cats', 'rule'], callback);
+            fourLoop(['cats', 'rule'], callback);
             expect(wasCallbackHit).toBe(true);
         });
-        it('called the callback executed on number', (expect) => {
-            let wasCallbackHit = false;
-            const callback = function callback(){
+        it('called the callback executed on number', function (expect) {
+            var wasCallbackHit = false;
+            const callback = function callback() {
                 wasCallbackHit = true;
             };
-            FourLoop(['cats', 'rule'].length, callback);
+            fourLoop(['cats', 'rule'].length, callback);
             expect(wasCallbackHit).toBe(true);
         });
-        it('called the callback executed on set', (expect) => {
+        it('called the callback executed on set', function (expect) {
             const mySet = new Set(['foo', 'bar', { baz: 'cats' }]);
-            let wasCallbackHit = false;
+            var wasCallbackHit = false;
 
-            const callback = function callback(){
+            const callback = function callback() {
                 wasCallbackHit = true;
             };
 
-            FourLoop(mySet, callback);
+            fourLoop(mySet, callback);
             expect(wasCallbackHit).toBe(true);
         });
-        it('called the callback executed on map', (expect) => {
-            const myMap = new Map([['foo', 'bar'], ['baz', 'cats'], ['dogs', undefined]]);
-            let wasCallbackHit = false;
+        it('called the callback executed on map', function (expect) {
+            const myMap = new Map([['foo', 'bar'], ['baz', 'cats'], ['dogs', 'drool']]);
+            var wasCallbackHit = false;
 
-            const callback = function callback(){
+            const callback = function callback() {
                 wasCallbackHit = true;
             };
 
-            FourLoop(myMap, callback);
+            fourLoop(myMap, callback);
             expect(wasCallbackHit).toBe(true);
         });
+    });
+    describe('ensures loops are properly called', function () {
+
     });
 });

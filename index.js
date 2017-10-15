@@ -1,45 +1,44 @@
-const isObject = function isObject(whoAmI){
+function isObject(whoAmI) {
     return (!!whoAmI) && (whoAmI.constructor === Object);
-};
+}
 
-const isArray = function isArray(whoAmI){
+function isArray(whoAmI) {
     return (!!whoAmI) && (whoAmI.constructor === Array);
-};
+}
 
-const isNumber = function isNumber(whoAmI){
+function isNumber(whoAmI) {
     return !isNaN(whoAmI);
-};
+}
 
-const isSet = function isSet(whoAmI){
+function isSet(whoAmI) {
     return (!!whoAmI) && (whoAmI.constructor === Set);
-};
+}
 
-const isMap = function isMap(whoAmI){
+function isMap(whoAmI) {
     return (!!whoAmI) && (whoAmI.constructor === Map);
-};
+}
 
-const fourLoop = function fourLoop(loopMe, callback){
-    if (isObject(loopMe)){
-        let iterator = 0;
-        Object.keys(loopMe).forEach((k) => {
+function fourLoop(loopMe, callback) {
+    var iterator = 0;
+    if (isObject(loopMe)) {
+        Object.keys(loopMe).forEach(function (k) {
             callback(loopMe[k], k, iterator);
             iterator++;
         });
-    } else if (isArray(loopMe)){
-        loopMe.forEach((val, key, iterator) => {
-            callback(val, val, iterator);
+    } else if (isArray(loopMe)) {
+        loopMe.forEach(function (v, k, i) {
+            callback(v, k, i);
         });
-    } else if (isNumber(loopMe)){
-        for (let i = 0; i < loopMe; i++) {
+    } else if (isNumber(loopMe)) {
+        for (var i = 0; i < loopMe; i++) {
             callback(i, i, i);
         }
-    } else if (isSet(loopMe) || isMap(loopMe)){
-        let iterator = 0;
-        loopMe.forEach((val, key) => {
-            callback(val, key, iterator);
+    } else if (isSet(loopMe) || isMap(loopMe)) {
+        loopMe.forEach(function (v, k) {
+            callback(v, k, i);
             iterator++;
         });
     }
-};
+}
 
 module.exports = fourLoop;

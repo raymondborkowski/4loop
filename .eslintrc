@@ -1,0 +1,16 @@
+{
+  "extends": "eslint-config-airbnb-es5",
+  "rules": {
+    "indent": ["error", 4],
+    "space-before-blocks": "off",
+    "no-plusplus": "off",
+    "func-names": "off"
+  },
+  "globals": {
+    "describe": true,
+    "it": true
+  },
+  "env": {
+    "node": true
+  }
+}

@@ -1,7 +1,7 @@
 const FeatherTest = require('feather-test');
 
 const myTests = new FeatherTest({
-    specs: './specs',
+    specs: './specs'
 });
 
 myTests.run();
