@@ -1,6 +1,6 @@
 {
   "name": "4loop",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Standard ForLoop syntax. Keep syntax clean and standard no matter what you pass us (arrs, objs, maps,etc.",
   "main": "index.js",
   "scripts": {
