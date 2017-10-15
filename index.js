@@ -35,7 +35,7 @@ function fourLoop(loopMe, callback) {
         }
     } else if (isSet(loopMe) || isMap(loopMe)) {
         loopMe.forEach(function (v, k) {
-            callback(v, k, i);
+            callback(v, k, iterator);
             iterator++;
         });
     }
