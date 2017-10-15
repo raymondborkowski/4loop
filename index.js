@@ -26,8 +26,8 @@ function fourLoop(loopMe, callback) {
             iterator++;
         });
     } else if (isArray(loopMe)) {
-        loopMe.forEach(function (v, k, i) {
-            callback(v, k, i);
+        loopMe.forEach(function (v, i) {
+            callback(v, v, i);
         });
     } else if (isNumber(loopMe)) {
         for (var i = 0; i < loopMe; i++) {
