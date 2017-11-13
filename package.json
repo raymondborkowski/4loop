@@ -1,11 +1,12 @@
 {
   "name": "4loop",
-  "version": "1.1.5",
+  "version": "1.1.7",
   "description": "Standard ForLoop syntax. Keep syntax clean and standard no matter what you pass us (arrs, objs, maps,etc.",
   "main": "index.js",
   "scripts": {
-    "test": "eslint . && node ./test/run",
-    "deploy": "eslint . && node ./test/run && npm publish"
+    "lint": "./node_modules/.bin/eslint .",
+    "test": "node ./test/run",
+    "deploy": "npm publish"
   },
   "repository": {
     "type": "git",
