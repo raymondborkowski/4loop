@@ -25,3 +25,5 @@ Please make sure all code supports all versions of node.
 We use ESLint for syntax consistency, and the linting rules are included in this repository. Running `npm test` will check the linting rules as well. Please make sure your code has no linting errors before submitting a pull request.
 
 `eslint . --fix` will also automatically fix any linting errors.
+
+We use travis to ensure all commits pass testing and linting.
