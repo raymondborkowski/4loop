@@ -1,31 +1,18 @@
 language: node_js
 node_js:
-<<<<<<< HEAD
-- node
-- '8'
-- '7'
-- '6'
-=======
   - node
   - '8'
   - '7'
   - '6'
->>>>>>> bbe6984ea964d4148baab4f6b15cd1fe49bf688a
 cache:
   directories:
   - node_modules
 install:
-<<<<<<< HEAD
-- npm install
-script:
-- npm test
-=======
   - npm install eslint
   - npm install
 script:
   - npm run lint
   - npm test
->>>>>>> bbe6984ea964d4148baab4f6b15cd1fe49bf688a
 deploy:
   provider: npm
   email: rborkows@umich.edu
