@@ -19,7 +19,7 @@ function isMap(whoAmI) {
 }
 
 function fourLoop(loopMe, callback) {
-    let iterator = 0;
+    var iterator = 0;
     if (isObject(loopMe)) {
         Object.keys(loopMe).forEach(function (k) {
             callback(loopMe[k], k, iterator);
